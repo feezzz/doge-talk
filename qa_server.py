@@ -13,7 +13,7 @@ class Question(BaseModel):
     question: str
 
 # 设置 DeepSeek API Key
-os.environ["OPENAI_API_KEY"] = "sk-ee50c75ee62449a7b68e20638e723284"
+os.environ["OPENAI_API_KEY"] = ""
 
 # 加载向量数据库
 embedding_model = HuggingFaceEmbeddings(model_name="GanymedeNil/text2vec-base-chinese")
